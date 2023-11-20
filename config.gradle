@@ -1,0 +1,81 @@
+ext {
+    versionsConfig = [
+            compileSdkVersion: 33,
+            minSdkVersion    : 24,
+            targetSdkVersion : 33,
+            gson             : "2.8.6",
+    ]
+
+    versions = [
+            "glide"         : "4.9.0",
+            "dokit"         : "3.5.0",
+            "kotlin_version": "1.6.21",
+            "autodensity"   : "3.0.0-alpha15",
+            "retrofit"      : "2.9.0"
+
+    ]
+
+    support = [
+            "androidx-constraintlayout": "androidx.constraintlayout:constraintlayout:1.1.3",
+            "androidx-appcompat"       : "androidx.appcompat:appcompat:1.6.1",
+            "desigin"                  : "com.google.android.material:material:1.8.0",
+            "androidx-annotation"      : "androidx.annotation:annotation:1.1.0",
+            "recyclerview"             : "androidx.recyclerview:recyclerview:1.2.1",
+            "databinding-runtime"      : "androidx.databinding:databinding-runtime:4.2.2",
+
+
+            //  kotlin
+            "core-ktx"                 : "androidx.core:core-ktx:1.9.0",
+            "kotlin"                   : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions["kotlin_version"]}",
+
+    ]
+
+    //依赖第三方配置
+    dependenciesConfig = [
+            //  glide
+            "glide"             : "com.github.bumptech.glide:glide:${versions["glide"]}",
+            "glide-compiler"    : "com.github.bumptech.glide:compiler:${versions["glide"]}",
+            //  eventbus
+            "eventbus"          : "org.greenrobot:eventbus:3.1.1",
+            //  zxing
+            "zxing"             : "miui.prebuilt:zxing:dev-SNAPSHOT",
+            //  wechat
+            "wechat-sdk"        : "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.1.6",
+            //  greendao
+            "greendao"          : "org.greenrobot:greendao:3.2.0",
+            //  gson
+            "gson"              : "com.google.code.gson:gson:2.8.5",
+            //  market
+            "market"            : "com.market:sdk:3.2.22",
+            //  rxjava
+            "rxjava"            : "io.reactivex.rxjava2:rxjava:2.1.14",
+            "rxandroid"         : "io.reactivex.rxjava2:rxandroid:2.0.2",
+            //  retrofit
+            "retrofit"          : "com.squareup.retrofit2:retrofit:${versions["retrofit"]}",
+            "retrofit-converter": "com.squareup.retrofit2:converter-gson:${versions["retrofit"]}",
+            "retrofit-adapter"  : "com.squareup.retrofit2:adapter-rxjava2:${versions["retrofit"]}",
+            // okhttp
+            "okhttp"            : "com.squareup.okhttp3:okhttp:4.11.0",
+            //  multidex
+            "multidex"          : "com.android.support:multidex:1.0.1",
+            //  onetrack
+            "onetrack"          : "com.xiaomi:onetrack-sdk:2.0.4",
+            //  安卓流式布局，用于扫单词的音标
+            "flowlayout"        : "com.hyman:flowlayout-lib:1.1.2",
+            //瀑布流布局管理器
+            "flexbox"           : "com.google.android:flexbox:1.0.0",
+            //  -------------- 性能框架 ------------
+            //  leakcanary
+            "leakcanary"        : "com.squareup.leakcanary:leakcanary-android:2.7",
+            //  DoKit
+            "doKit"             : "io.github.didi.dokit:dokitx:${versions["dokit"]}",
+            "mlkit"             : 'com.google.mlkit:barcode-scanning:17.0.2',
+            //  动态 dpi
+            "autodensity"       : "miuix.autodensity:autodensity:${versions["autodensity"]}",
+            //  临时分词资源库，后续OCR更新替换
+            "minlp"             : 'com.xiaomi.minlp:minlp-tokenizer-core:2.1',
+            "banner"            : 'com.github.zhpanvip:bannerviewpager:3.5.6',
+            "ethanhua"          : 'com.ethanhua:skeleton:1.1.2',
+            "supercharge"       : 'io.supercharge:shimmerlayout:2.1.0',
+    ]
+}
