@@ -3,6 +3,8 @@ package com.miss.lib_base.base
 import android.app.Activity
 import android.app.Application
 import android.os.Bundle
+import com.elvishew.xlog.LogLevel
+import com.elvishew.xlog.XLog
 import com.miss.lib_common.common.AppUtil
 
 /**
@@ -11,12 +13,20 @@ import com.miss.lib_common.common.AppUtil
  * @description
  *      生命周期监听
  */
-class BaseApplication : Application() {
+open class BaseApplication : Application() {
 
 
     override fun onCreate() {
         super.onCreate()
         setApplication(this)
+        init()
+    }
+
+    private fun init() {
+
+        //  xlog 初始化
+        XLog.init(LogLevel.ALL)
+
     }
 
 

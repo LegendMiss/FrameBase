@@ -53,11 +53,12 @@ dependencies {
     // rx
     api dependenciesConfig.rxjava
     api dependenciesConfig.rxandroid
+    // xlog
+    api dependenciesConfig.xlog
     //  other
     api dependenciesConfig.gson
     api dependenciesConfig.multidex
     api support["databinding-runtime"]
-
 
 
 }

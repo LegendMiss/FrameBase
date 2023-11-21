@@ -70,12 +70,6 @@ ext {
             //  DoKit
             "doKit"             : "io.github.didi.dokit:dokitx:${versions["dokit"]}",
             "mlkit"             : 'com.google.mlkit:barcode-scanning:17.0.2',
-            //  动态 dpi
-            "autodensity"       : "miuix.autodensity:autodensity:${versions["autodensity"]}",
-            //  临时分词资源库，后续OCR更新替换
-            "minlp"             : 'com.xiaomi.minlp:minlp-tokenizer-core:2.1',
-            "banner"            : 'com.github.zhpanvip:bannerviewpager:3.5.6',
-            "ethanhua"          : 'com.ethanhua:skeleton:1.1.2',
-            "supercharge"       : 'io.supercharge:shimmerlayout:2.1.0',
+            "xlog"              : "com.elvishew:xlog:1.10.1",
     ]
 }

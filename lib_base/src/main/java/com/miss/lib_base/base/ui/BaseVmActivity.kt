@@ -2,19 +2,16 @@ package com.miss.lib_base.base.ui
 
 import android.content.Intent
 import android.content.pm.ActivityInfo
-import android.os.Build
 import android.os.Bundle
 import android.view.View
-import android.view.WindowManager
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.miss.lib_base.base.viewmodel.BaseViewModel
-import com.miss.lib_base.utils.ScreenUtil
+import com.miss.lib_common.common.ScreenUtil
 import com.miss.lib_base.utils.getVmClazz
 import com.miss.lib_base.view.isFastClick
-import com.miss.lib_base.view.notNull
 
 /**
  *  author : 唐鹏聪
@@ -31,9 +28,7 @@ abstract class BaseVmActivity<VM : BaseViewModel> : AppCompatActivity(), View.On
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        setOrientation()
         super.onCreate(savedInstanceState)
-
 
         if (initViewBind() != null) {
             setContentView(initViewBind())
