@@ -38,4 +38,6 @@ android {
 dependencies {
 
     api project(':lib_base')
+    //  leakcanary
+    debugImplementation dependenciesConfig.leakcanary
 }

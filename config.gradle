@@ -35,18 +35,8 @@ ext {
             //  glide
             "glide"             : "com.github.bumptech.glide:glide:${versions["glide"]}",
             "glide-compiler"    : "com.github.bumptech.glide:compiler:${versions["glide"]}",
-            //  eventbus
-            "eventbus"          : "org.greenrobot:eventbus:3.1.1",
-            //  zxing
-            "zxing"             : "miui.prebuilt:zxing:dev-SNAPSHOT",
-            //  wechat
-            "wechat-sdk"        : "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.1.6",
-            //  greendao
-            "greendao"          : "org.greenrobot:greendao:3.2.0",
             //  gson
             "gson"              : "com.google.code.gson:gson:2.8.5",
-            //  market
-            "market"            : "com.market:sdk:3.2.22",
             //  rxjava
             "rxjava"            : "io.reactivex.rxjava2:rxjava:2.1.14",
             "rxandroid"         : "io.reactivex.rxjava2:rxandroid:2.0.2",
@@ -58,6 +48,8 @@ ext {
             "okhttp"            : "com.squareup.okhttp3:okhttp:4.11.0",
             //  multidex
             "multidex"          : "com.android.support:multidex:1.0.1",
+            //  mmkv
+            "mmkv"              : 'com.tencent:mmkv:1.3.2',
             //  onetrack
             "onetrack"          : "com.xiaomi:onetrack-sdk:2.0.4",
             //  安卓流式布局，用于扫单词的音标
@@ -71,5 +63,6 @@ ext {
             "doKit"             : "io.github.didi.dokit:dokitx:${versions["dokit"]}",
             "mlkit"             : 'com.google.mlkit:barcode-scanning:17.0.2',
             "xlog"              : "com.elvishew:xlog:1.10.1",
+
     ]
 }

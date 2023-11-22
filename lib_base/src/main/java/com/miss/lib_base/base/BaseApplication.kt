@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.elvishew.xlog.LogLevel
 import com.elvishew.xlog.XLog
 import com.miss.lib_common.common.AppUtil
+import com.tencent.mmkv.MMKV
 
 /**
  * @author hw_tang
@@ -26,11 +27,14 @@ open class BaseApplication : Application() {
 
         //  xlog 初始化
         XLog.init(LogLevel.ALL)
+        //  mmkv 初始化
+        val rootDir = MMKV.initialize(this)
+        XLog.i("mmkv root : $rootDir")
 
     }
 
 
-    companion object{
+    companion object {
 
         private var sInstance: Application? = null
 
@@ -39,29 +43,29 @@ open class BaseApplication : Application() {
             //  初始化工具类
             AppUtil.init(application)
 
-            application.registerActivityLifecycleCallbacks(object :ActivityLifecycleCallbacks{
+            application.registerActivityLifecycleCallbacks(object : ActivityLifecycleCallbacks {
                 override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
                     AppManager.addActivity(activity)
                 }
 
                 override fun onActivityStarted(activity: Activity) {
-                    
+
                 }
 
                 override fun onActivityResumed(activity: Activity) {
-                    
+
                 }
 
                 override fun onActivityPaused(activity: Activity) {
-                    
+
                 }
 
                 override fun onActivityStopped(activity: Activity) {
-                    
+
                 }
 
                 override fun onActivitySaveInstanceState(activity: Activity, outState: Bundle) {
-                    
+
                 }
 
                 override fun onActivityDestroyed(activity: Activity) {
